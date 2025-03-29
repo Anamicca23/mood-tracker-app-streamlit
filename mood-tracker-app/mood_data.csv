@@ -1,0 +1,13 @@
+id,username,mood,note,date,sentiment
+1,anamika,Neutral,,2025-03-29 23:44:47,0.0
+2,anamika,Neutral,i am currently working on mood taraker app project . so i am feeling neutral today.,2025-03-29 23:45:47,0.197
+3,anamika,Neutral,i am currently working on mood tracker app project . so i am feeling neutral today.,2025-03-29 23:45:57,0.197
+4,anamika,Happy,i just completed this project. hurray,2025-03-29 23:46:36,0.5719
+5,anamika,Sad,i couldn't able to add some more features to it.,2025-03-29 23:47:20,0.0
+6,anamika,Happy,I am able to to see how is it working fine. ,2025-03-29 23:48:05,0.2023
+7,anamika,Angry,i had very worst day today.,2025-03-29 23:48:44,-0.659
+8,anamika,Happy, I eat fablous dish today.,2025-03-29 23:49:52,0.0
+9,anamika,Happy,i was able to work on improving my health.,2025-03-29 23:50:27,0.4215
+10,anamika,Happy,i have created this app successfully using streamlit.,2025-03-29 23:52:35,0.6369
+11,anamika,Sad,I am sad,2025-03-29 23:53:42,-0.4767
+12,anamika,Excited,"here , i am very excited to show you this project with you!.",2025-03-29 23:59:38,0.4561
