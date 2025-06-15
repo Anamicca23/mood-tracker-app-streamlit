@@ -1,4 +1,3 @@
-<!-- Banner Section -->
 <p align="center">
   <img src="https://img.freepik.com/free-vector/emotional-intelligence-concept-illustration_114360-7063.jpg?w=826" width="500"/>
 </p>
@@ -7,165 +6,152 @@
 <p align="center">
   A beautifully simple mood-tracking app built with Streamlit. Track emotions, explore trends, and receive AI-powered insights.
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/github/stars/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=brightgreen" />
   <img src="https://img.shields.io/github/forks/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=blue" />
   <img src="https://img.shields.io/github/license/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=orange" />
 </p>
 
-
 <p align="center">
-  <p align="center">
-    Built with tech-stack like:</br>
-    </br>
+  Built with tech-stack like:</br>
+  </br>
   <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Framework-Streamlit-ff4b4b?logo=streamlit&logoColor=white" />
   <img src="https://img.shields.io/badge/Database-SQLite-lightblue?logo=sqlite&logoColor=white" />
   <img src="https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Plotly-orange?logo=plotly&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-Integrated-green?logo=openai" />
-</p></p>
+</p>
 
+
+# 📝 Mood Tracker App (Streamlit)
+A sophisticated **Mood Tracker App** built with **Streamlit**, **SQLite**, and **Matplotlib**, designed to help users seamlessly log their daily moods, track emotional patterns, and visualize trends over time. The app features interactive data visualization, historical mood analysis, and **AI-driven mood predictions** for deeper emotional insights. With a user-friendly interface, it empowers individuals to understand their mental well-being better and make informed lifestyle adjustments. 🚀
+
+---
 
 ## ✨ Features
+- ✅ Log Daily Mood
+- 📊 Trend Visualization
+- 🧠 AI Insights (Optional)
+- 🗂 History Log
+- 💻 Modern UI
+- 🔒 Privacy Focused
 
-- ✅ **Log Daily Mood**: Use intuitive sliders for mood, sleep, energy, and productivity levels
-- 📊 **Trend Visualization**: View line charts, radar plots, and compare metrics over time
-- 🧠 **AI Insights (Optional)**: GPT-powered emotional summaries and well-being suggestions
-- 🗂 **History Log**: Browse, delete, or review past entries stored locally in SQLite
-- 💻 **Modern UI**: Clean, interactive frontend with fast reactivity using Streamlit
-- 🔒 **Privacy Focused**: All data is stored locally (no cloud by default)
-
----
 
 ## 📁 Project Structure
-
 ```bash
 📦 mood-tracker-app-streamlit/
-├── main.py                  # App Entry Point
-├── requirements.txt         # Dependencies
+├── main.py
+├── requirements.txt
 ├── modules/
-│   ├── db.py                # Database Operations (Insert, Read, Delete)
-│   ├── visualization.py     # Charts (Line, Radar, Bar)
-│   └── guidances.py         # OpenAI Feedback Integration
+│   ├── db.py
+│   ├── visualization.py
+│   └── guidances.py
 ├── databases/
-│   └── mental_health.db     # SQLite Database File
-├── assets/                  # Optional: Store screenshots, logos, etc.
+│   └── mental_health.db
+├── assets/
 └── .github/workflows/
-    └── deploy.yml           # CI/CD for deployment
-````
+    └── deploy.yml
+```
 
----
+## 📸 Screenshots
+| Dashboard | Mood Entry | Mood Trends |
+|----------|-------------|--------------|
+| ![](https://github.com/user-attachments/assets/e4676f89-9342-4215-a9fa-33b6c357574e) | ![](https://github.com/user-attachments/assets/965f884e-7332-40f8-93d0-81060cb5e667) | ![](https://github.com/user-attachments/assets/b4d4861e-ff7a-4f3b-b85f-c9ab0ba63a81) |
+
+## 🌐 Web UI Preview
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://github.com/user-attachments/assets/657efb95-d9c9-4ade-8d5f-0eef23e3eefa)
+
+
+
+## 🛠 Tech Stack
+- **Frontend:** Streamlit  
+- **Backend:** Python, SQLite  
+- **Data Analysis:** Pandas, Matplotlib, NLTK  
+- **Authentication:** Streamlit session state
 
 ## 🚀 Getting Started
-
 ### 1️⃣ Clone the Repository
-
 ```bash
 git clone https://github.com/Anamicca23/mood-tracker-app-streamlit.git
 cd mood-tracker-app-streamlit
 ```
 
-### 2️⃣ Install Dependencies
+2️⃣ Create Virtual Environment  
+```bash
+python -m venv venv
+```
 
+3️⃣ Activate It  
+- **Windows:** `venv\Scripts\activate`  
+- **Mac/Linux:** `source venv/bin/activate`  
+
+4️⃣ Install Dependencies  
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Launch the App
-
+5️⃣ Run the App  
 ```bash
 streamlit run main.py
 ```
 
-📌 *Note: Make sure your Python version is 3.9 or above for compatibility.*
+📌 *Note: Python 3.9+ recommended*
 
----
 
-## 🌐 Web UI Preview
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/placeholder/mood-ui-preview.png" width="80%" alt="Mood Tracker UI"/>
-  <br />
-  <i>Minimal, clean, and accessible interface designed for everyday use.</i>
-</p>
-
----
+## 📤 Export Data
+Click "Download CSV" in-app
 
 ## ☁️ Deployment
+- Docker support
+- GitHub Actions
+- Platforms: Google Cloud Run, Streamlit Community, Heroku
 
-This app is **production-ready** and easy to deploy.
+## 🧠 Powered by AI
+Leverage GPT to analyze moods.
 
-* 📦 **Docker** support with pre-configured `Dockerfile`
-* 🔄 **GitHub Actions** (`deploy.yml`) for automatic cloud deployment
-* ☁️ **Suggested Platforms**:
-
-  * Google Cloud Run
-  * Streamlit Community Cloud
-  * Heroku
-
----
-
-## 🧠 Powered by AI 
-
-Leverage **OpenAI GPT** to generate personalized feedback based on your mood history.
-
-### How to Enable:
-
-1. Get your API key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
-2. Add it to a `.env` file or directly inside `guidances.py`
-
-   ```bash
-   export OPENAI_API_KEY="your-key-here"
-   ```
-3. Enable "Guidance" in the sidebar and enjoy actionable insights.
-
-🔐 *Your key is never shared and used only for this session.*
-
----
+### Setup AI:
+- Get API key from [OpenAI](https://platform.openai.com/account/api-keys)  
+- Add to `.env` or in `guidances.py`  
+```bash
+export OPENAI_API_KEY="your-key-here"
+```
 
 ## 📅 Upcoming Features
-
-| Feature                                           | Status                 |
-| ------------------------------------------------- | ---------------------- |
-| 🧑‍🤝‍🧑 Multi-user support                       | 🛠 In Progress         |
-| 📲 Mobile-responsive UI                           | ✅ Done (via Streamlit) |
-| 📄 Mood export (PDF/CSV)                          | Planned                |
-| ⏰ Daily email reminders                           | Planned                |
-| 🧘‍♀️ Integrate with wellness APIs (e.g., Fitbit) | Researching            |
-
----
+| Feature | Status |
+|--------|--------|
+| Multi-user support | 🛠 In Progress |
+| Mobile UI | ✅ Done |
+| Mood Export | Planned |
+| Email Reminders | Planned |
+| API Integration | Researching |
 
 ## 📚 Use Cases
+- Self-reflection
+- Mental Health Research
+- Therapy Tool
+- Mindfulness Journal
 
-* 📝 **Self-reflection**: Log your emotions daily and look for patterns
-* 🧪 **Mental Health Research**: Analyze trends for personal insights or academic study
-* 👨‍⚕️ **Therapy Support Tool**: Share visual history with your counselor
-* 🧘‍♀️ **Mindfulness Companion**: Combine mood logs with meditation journals
-
----
 
 ## 🤝 Contributing
-
-Contributions are welcome! Here’s how:
-
-1. 🌱 Fork the repo
-2. 🚧 Create a feature branch
-3. 💬 Submit a Pull Request
-
 ```bash
 git checkout -b feature/yourFeature
 git commit -m "Add your awesome feature"
 git push origin feature/yourFeature
 ```
 
----
-
 ## 👩‍💻 Author
+**Anamika Kumari**  
+📬 [GitHub](https://github.com/Anamicca23)  
 
-**Anamika Kumari**
-📬 [GitHub](https://github.com/Anamicca23) 
-• ✨ Passionate about mental wellness + open source
+## 📜 License
+MIT License
+
+
+
+## 🌟 Support & Feedback
+Star ⭐ the repo & share feedback!
+
 
 ---
 
