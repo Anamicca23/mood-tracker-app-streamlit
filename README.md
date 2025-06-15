@@ -1,105 +1,180 @@
-# **📝 Mood Tracker App (Streamlit)**
+<!-- Banner Section -->
+<p align="center">
+  <img src="https://img.freepik.com/free-vector/emotional-intelligence-concept-illustration_114360-7063.jpg?w=826" width="500"/>
+</p>
 
-A sophisticated **Mood Tracker App** built with **Streamlit**, **SQLite**, and **Matplotlib**, designed to help users seamlessly log their daily moods, track emotional patterns, and visualize trends over time. The app features interactive data visualization, historical mood analysis, and **AI-driven mood predictions** for deeper emotional insights. With a user-friendly interface, it empowers individuals to understand their mental well-being better and make informed lifestyle adjustments. 🚀
+<h1 align="center">🌈 Mood Tracker App</h1>
+<p align="center">
+  A beautifully simple mood-tracking app built with Streamlit. Track emotions, explore trends, and receive AI-powered insights.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=brightgreen" />
+  <img src="https://img.shields.io/github/forks/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=blue" />
+  <img src="https://img.shields.io/github/license/Anamicca23/mood-tracker-app-streamlit?style=flat-square&color=orange" />
+</p>
+
+
+<p align="center">
+  <p align="center">
+    Built with tech-stack like:</br>
+    </br>
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-Streamlit-ff4b4b?logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Database-SQLite-lightblue?logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Plotly-orange?logo=plotly&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-Integrated-green?logo=openai" />
+</p></p>
+
+
+## ✨ Features
+
+- ✅ **Log Daily Mood**: Use intuitive sliders for mood, sleep, energy, and productivity levels
+- 📊 **Trend Visualization**: View line charts, radar plots, and compare metrics over time
+- 🧠 **AI Insights (Optional)**: GPT-powered emotional summaries and well-being suggestions
+- 🗂 **History Log**: Browse, delete, or review past entries stored locally in SQLite
+- 💻 **Modern UI**: Clean, interactive frontend with fast reactivity using Streamlit
+- 🔒 **Privacy Focused**: All data is stored locally (no cloud by default)
 
 ---
 
-## 🎥 **Demo Video**  
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://github.com/user-attachments/assets/657efb95-d9c9-4ade-8d5f-0eef23e3eefa)  
+## 📁 Project Structure
 
-
----
-
-## 🚀 **Features**  
-✅ **Track Your Mood Daily** (Happy, Sad, Neutral, etc.)  
-✅ **User Authentication** (Register & Login)  
-✅ **Mood History & Trends** (Data stored in SQLite)  
-✅ **Data Visualization** (Bar charts & sentiment trends)  
-✅ **AI Mood Prediction** (Using NLTK Sentiment Analysis)  
-✅ **Export Data as CSV** for tracking  
-
----
-
-## 🛠 **Tech Stack**  
-- **Frontend:** Streamlit  
-- **Backend:** Python, SQLite  
-- **Data Analysis:** Pandas, Matplotlib, NLTK  
-- **Authentication:** Streamlit session state  
+```bash
+📦 mood-tracker-app-streamlit/
+├── main.py                  # App Entry Point
+├── requirements.txt         # Dependencies
+├── modules/
+│   ├── db.py                # Database Operations (Insert, Read, Delete)
+│   ├── visualization.py     # Charts (Line, Radar, Bar)
+│   └── guidances.py         # OpenAI Feedback Integration
+├── databases/
+│   └── mental_health.db     # SQLite Database File
+├── assets/                  # Optional: Store screenshots, logos, etc.
+└── .github/workflows/
+    └── deploy.yml           # CI/CD for deployment
+````
 
 ---
 
-## 🔧 **Installation & Setup**  
-1️⃣ **Clone the Repository:**  
-```sh
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Anamicca23/mood-tracker-app-streamlit.git
 cd mood-tracker-app-streamlit
 ```
 
-2️⃣ **Create a Virtual Environment:**  
-```sh
-python -m venv venv
-```
+### 2️⃣ Install Dependencies
 
-3️⃣ **Activate the Virtual Environment:**  
-- **Windows:**  
-  ```sh
-  venv\Scripts\activate
-  ```
-- **Mac/Linux:**  
-  ```sh
-  source venv/bin/activate
-  ```
-
-4️⃣ **Install Dependencies:**  
-```sh
+```bash
 pip install -r requirements.txt
 ```
 
-5️⃣ **Run the App:**  
-```sh
-streamlit run app.py
+### 3️⃣ Launch the App
+
+```bash
+streamlit run main.py
+```
+
+📌 *Note: Make sure your Python version is 3.9 or above for compatibility.*
+
+---
+
+## 🌐 Web UI Preview
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/placeholder/mood-ui-preview.png" width="80%" alt="Mood Tracker UI"/>
+  <br />
+  <i>Minimal, clean, and accessible interface designed for everyday use.</i>
+</p>
+
+---
+
+## ☁️ Deployment
+
+This app is **production-ready** and easy to deploy.
+
+* 📦 **Docker** support with pre-configured `Dockerfile`
+* 🔄 **GitHub Actions** (`deploy.yml`) for automatic cloud deployment
+* ☁️ **Suggested Platforms**:
+
+  * Google Cloud Run
+  * Streamlit Community Cloud
+  * Heroku
+
+---
+
+## 🧠 Powered by AI 
+
+Leverage **OpenAI GPT** to generate personalized feedback based on your mood history.
+
+### How to Enable:
+
+1. Get your API key: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+2. Add it to a `.env` file or directly inside `guidances.py`
+
+   ```bash
+   export OPENAI_API_KEY="your-key-here"
+   ```
+3. Enable "Guidance" in the sidebar and enjoy actionable insights.
+
+🔐 *Your key is never shared and used only for this session.*
+
+---
+
+## 📅 Upcoming Features
+
+| Feature                                           | Status                 |
+| ------------------------------------------------- | ---------------------- |
+| 🧑‍🤝‍🧑 Multi-user support                       | 🛠 In Progress         |
+| 📲 Mobile-responsive UI                           | ✅ Done (via Streamlit) |
+| 📄 Mood export (PDF/CSV)                          | Planned                |
+| ⏰ Daily email reminders                           | Planned                |
+| 🧘‍♀️ Integrate with wellness APIs (e.g., Fitbit) | Researching            |
+
+---
+
+## 📚 Use Cases
+
+* 📝 **Self-reflection**: Log your emotions daily and look for patterns
+* 🧪 **Mental Health Research**: Analyze trends for personal insights or academic study
+* 👨‍⚕️ **Therapy Support Tool**: Share visual history with your counselor
+* 🧘‍♀️ **Mindfulness Companion**: Combine mood logs with meditation journals
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here’s how:
+
+1. 🌱 Fork the repo
+2. 🚧 Create a feature branch
+3. 💬 Submit a Pull Request
+
+```bash
+git checkout -b feature/yourFeature
+git commit -m "Add your awesome feature"
+git push origin feature/yourFeature
 ```
 
 ---
 
-## 📸 **Screenshots**  
-| **Dashboard** | **Mood Entry** | **Mood Trends** |
-|--------------|--------------|--------------|
-| ![Dashboard](https://github.com/user-attachments/assets/e4676f89-9342-4215-a9fa-33b6c357574e) | ![Mood Entry](https://github.com/user-attachments/assets/965f884e-7332-40f8-93d0-81060cb5e667) | ![Mood Trends](https://github.com/user-attachments/assets/b4d4861e-ff7a-4f3b-b85f-c9ab0ba63a81) |
+## 👩‍💻 Author
+
+**Anamika Kumari**
+📬 [GitHub](https://github.com/Anamicca23) 
+• ✨ Passionate about mental wellness + open source
 
 ---
 
-## 📤 **Export Data**  
-To **export your mood history**, click the **"Download CSV"** button in the app. You can open the exported CSV file in **Excel or Google Sheets** for personal tracking.  
+<p align="center">
+  💚 Made with mindfulness to help you track, reflect, and thrive 💚
+</p>
 
----
-
-
-## 👥 **Contributing**  
-Want to improve this project? Follow these steps:  
-1. **Fork the repository**  
-2. **Create a new branch:**  
-   ```sh
-   git checkout -b feature-name
-   ```
-3. **Commit your changes:**  
-   ```sh
-   git commit -m "Added feature XYZ"
-   ```
-4. **Push to GitHub & submit a pull request!**  
-
----
-
-## 📜 **License**  
-This project is open-source and available under the **MIT License**.  
-
----
-
-## 🌟 **Support & Feedback**  
-If you like this project, **star** ⭐ the repository and share your feedback! 😊  
-
----
-
-
-Thank you!
-###Happy Coding!
+<p align="center">
+  <a href="#-mood-tracker-app">
+    <img src="https://img.shields.io/badge/⬆️%20Back%20to%20Top-blue?style=for-the-badge" alt="Back to Top" />
+  </a>
+</p>
